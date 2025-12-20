@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Cinzel-Medium';
+    src: url(fonts/Cinzel-Medium.ttf);
+}
+
+@font-face{
+    font-family: 'Oswald-Medium';
+    src: url(fonts/Oswald-Medium.ttf);
+}
+
+
+body{
+    background-image: url(1059910.jpg);
+    background-size: cover;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.header{
+    background-color: #202020ea;
+    color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.top h1{
+    font-size: 50px;
+    font-family: "Cinzel", serif;
+}
+
+.wowlogo img{
+    height: 60px;
+}
+
+.low{
+    background-color: #242424e7;
+    border-top: 1px solid rgb(156, 156, 156);
+}
+
+.low ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    flex-wrap: nowrap;
+}
+
+.low a{
+    background-color: #181818;
+    text-decoration: none;
+    display: flex;
+    color: rgb(211, 211, 211);
+    padding: 17px 140px;
+    border: 3px solid rgb(116, 116, 116);
+    flex-wrap: nowrap;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+}
+
+.low a:hover{
+    transition-duration: 0.2s;
+    background-color: #242424;
+    border: 3px solid rgb(172, 146, 0);
+    color: rgb(199, 169, 0);
+}
+
+
+nav{
+    width: 18%;
+    height: fit-content;
+    background-color: #271e0ada;
+    position: fixed;
+    left: 70px;
+    right: 0;
+    top: 280px;
+    bottom: 0;
+    border: 3px solid rgb(116, 116, 116);
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav a{
+    text-decoration: none;
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0);
+    color: rgb(228, 215, 141);
+    padding: 10px 5px;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    gap: 20px 0px;
+}
+
+.nav a:hover{
+    transition-duration: 0.2s;
+    background-color: #242424;
+    border: 2px solid rgb(172, 146, 0);
+    color: rgb(199, 169, 0);
+
+}
+
+section{
+    width: 70%;
+    height: fit-content;
+    background-color: #1b1b1be8;
+    position: absolute;
+    left: 500px;
+    right: 0;
+    top: 250px;
+    bottom: 0;
+    border: 3px solid rgb(116, 116, 116);
+    display: flex;
+    flex-direction: column;
+    animation: animation 2s ease-in-out;
+}
+
+@keyframes animation{
+    0%{
+        clip-path: inset(0 0 100% 0);
+    }
+
+    100%{
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+
+#war{
+    padding: 17px;
+}
+
+section h1{
+    color: rgb(199, 169, 0);
+    font-family: "Cinzel", serif;
+}
+
+section p{
+    color: rgb(153, 153, 153);
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+#prottal img{
+    padding-left: 150px;
+    padding-top: 30px;
+    border-radius: 15px;
+}
+
+#furytal img{
+    padding-left: 150px;
+    padding-top: 30px;
+    border-radius: 15px;
+}
+
+#armstal img{
+    padding-left: 150px;
+    padding-top: 30px;
+}
+
+.s{
+    color: #F27900;
+}
+
+.a{
+    color: #9932DF;
+}
+
+.b{
+    color: #0068CD;
+}
+
+.c{
+    color: #1CEB00;
+}
+
+.d{
+    color: #E7E7E7;
+}
+
+
+
+
+
+@media (max-width: 850px){
+
+    nav {
+        display: none;
+    }
+
+    section{
+        width: 96%;
+       display: flex;
+       justify-content: center;
+       left: 2%;
+    }
+
+    section img{
+        width: 100%;
+    }
+
+    #prottal img, #furytal img, #armstal img{
+        padding-left: 0%;
+    }
+
+    header .h1{
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 851px) and (max-width: 1400px){
+
+    nav{
+        left: 10px;
+        width: 30%;
+    }
+
+    section{
+        left: 300px;
+        width: 60%;
+    }
+
+    section img{
+        width: 100%;
+    }
+
+    #prottal img, #furytal img, #armstal img{
+        padding-left: 0%;
+    }
+
+}
+
+@media (min-width: 1400px) and (max-width: 1800px){
+
+    nav{
+        left: 10px;
+        width: 30%;
+    }
+
+    section{
+        left: 300px;
+        width: 80%;
+    }
+
+    section img{
+        width: 100%;
+    }
+
+    #prottal img, #furytal img, #armstal img{
+        padding-left: 0%;
+    }
+
+}

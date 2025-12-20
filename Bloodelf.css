@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Cinzel-Medium';
+    src: url(fonts/Cinzel-Medium.ttf);
+}
+
+@font-face{
+    font-family: 'Oswald-Medium';
+    src: url(fonts/Oswald-Medium.ttf);
+}
+
+
+body{
+    background-image: url(Silvermoon-City.png);
+    background-size: cover;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.human{
+    background-color: #202020ea;
+    color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.human h1{
+    font-size: 50px;
+    font-family: 'Cinzel-Medium';
+}
+
+.human a{
+    text-decoration: none;
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0);
+    color: rgb(211, 211, 211);
+    padding: 20px 20px;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    font-family: 'Oswald-Medium';
+}
+
+.human a:hover{
+    transition-duration: 0.2s;
+    background-color: #242424;
+    border: 2px solid rgb(172, 146, 0);
+    color: rgb(199, 169, 0);
+}
+
+
+
+
+section{
+    width: 40%;
+}
+
+.racepic{
+    width: 100px;
+}
+
+.racepic img{
+    width: 800px;
+    margin-top: 230px;
+}
+
+
+
+
+main{
+    width: 50%;
+    height: fit-content;
+    background-color: #1f1914da;
+    position: absolute;
+    left: 700px;
+    right: 0;
+    top: 250px;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid rgb(116, 116, 116);
+    display: flex;
+    flex-direction: column;
+    animation: animation 1s ease-in-out;
+}
+
+@keyframes animation{
+    0%{
+        clip-path: inset(0 0 100% 0);
+    }
+
+    100%{
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+
+.race{
+    margin: auto;
+    color: aliceblue;
+    padding: 20px;
+}
+
+.race h2{
+    font-size: 50px;
+}
+
+.summup{
+    margin: auto;
+    color: #c4ad8e;
+    width: 70%;
+    border-bottom: 1px solid #c4ad8e;
+    border-top: 1px solid #c4ad8e;
+    padding: 20px 0px;
+}
+
+.summup p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.info{
+    display: flex;
+    gap: 60px;
+    width: fit-content;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.classes h2{
+    color: aliceblue;
+}
+
+.classes p{
+    color: rgb(170, 145, 0);
+    font-size: 20px;
+}
+
+.traits{
+    width: 300px;
+}
+
+.traits h2{
+    color: aliceblue;
+}
+
+.traits p{
+    color: rgb(170, 145, 0);
+    font-size: 20px;
+}
+
+@media (max-width: 860px){
+
+    main{
+        width: 96%;
+        left: 2%;
+        right: 2%;
+    }
+
+    .summup{
+        width: 96%;
+
+    }
+
+    .racepic img{
+        margin-top: 1000px;
+        width: 600px;
+    }
+
+    .info{
+        gap: 30px;
+    }
+
+}
+
+@media (min-width: 1100px) and (max-width: 1400px){
+
+    .racepic img{
+        margin-top: 250px;
+        width: 700px;
+    }
+
+    main{
+        width: 50%;
+        left: 500px;
+        top: 300px;
+    }
+
+    .summup{
+        width: 86%;
+    }
+
+    .info{
+        gap: 30px;
+    }
+}
+
+@media (min-width: 861px) and (max-width: 1100px){
+
+    .racepic img{
+        margin-top: 350px;
+        width: 600px;
+    }
+
+    main{
+        width: 50%;
+        left: 400px;
+        top: 400px;
+    }
+
+    .summup{
+        width: 94%;
+    }
+
+    .info{
+        gap: 20px;
+    }
+}

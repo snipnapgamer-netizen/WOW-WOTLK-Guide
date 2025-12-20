@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Cinzel-Medium';
+    src: url(fonts/Cinzel-Medium.ttf);
+}
+
+@font-face{
+    font-family: 'Oswald-Medium';
+    src: url(fonts/Oswald-Medium.ttf);
+}
+
+
+body{
+    background-image: url(1059910.jpg);
+    background-size: cover;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.header{
+    background-color: #202020ea;
+    color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.top h1{
+    font-size: 50px;
+    font-family: "Cinzel", serif;
+}
+
+.wowlogo img{
+    height: 60px;
+}
+
+.low{
+    background-color: #242424e7;
+    border-top: 1px solid rgb(156, 156, 156);
+}
+
+.low ul{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: nowrap;
+}
+
+.low a{
+    background-color: #181818;
+    text-decoration: none;
+    display: flex;
+    color: rgb(211, 211, 211);
+    padding: 17px 140px;
+    border: 3px solid rgb(116, 116, 116);
+    flex-wrap: nowrap;
+    font-size: 20px;
+    font-family: 'Oswald-Medium';
+}
+
+.low a:hover{
+    transition-duration: 0.2s;
+    background-color: #242424;
+    border: 3px solid rgb(172, 146, 0);
+    color: rgb(199, 169, 0);
+}
+
+
+
+
+
+
+
+section{
+    width: 86%;
+    height: 700px;
+    background-color: #0d1321c9;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 400px;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid rgb(116, 116, 116);
+    display: flex;
+    flex-direction: column;
+    animation: animation 0.6s ease-in-out;
+}
+
+@keyframes animation{
+    0%{
+        clip-path: inset(0 100% 0 0);
+    }
+
+    100%{
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+
+.atitle{
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.atitle h1{
+    text-align: center;
+    color: rgb(170, 145, 0);
+    font-family: "Cinzel", serif;
+    background-color: rgba(11, 34, 82, 0.733);
+    padding: 10px 20px;
+    border: 3px solid rgb(170, 145, 0);
+    border-radius: 40px;
+}
+
+section div{
+    gap: 30px;
+}
+
+.Alliance{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: animation1 1s ease-in-out;
+}
+
+@keyframes animation1{
+    0%{
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+
+    60%{
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.card{
+    background-color: #151924 !important;
+    color: white !important;
+    flex-wrap: wrap;
+}
+
+.card h5{
+    font-size: 25px !important;
+}
+
+
+
+
+
+main{
+    width: 86%;
+    height: 700px;
+    background-color: #210d10c9;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1550px;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid rgb(116, 116, 116);
+    display: flex;
+    flex-direction: column;
+    animation: animation 0.6s ease-in-out;
+}
+
+main div{
+    gap: 30px;
+}
+
+.htitle{
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.htitle h1{
+    text-align: center;
+    color: rgb(170, 145, 0);
+    font-family: "Cinzel", serif;
+    background-color: rgba(82, 11, 11, 0.733);
+    padding: 10px 20px;
+    border: 3px solid rgb(170, 145, 0);
+    border-radius: 40px;
+}
+
+
+.Horde{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: animation1 1s ease-in-out;
+}
+
+.card1{
+    background-color: #270e0e !important;
+    color: white !important;
+    flex-wrap: wrap;
+}
+
+.card h5{
+    font-size: 25px !important;
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    background: white;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+/* Mobile nav menu */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.mobile-nav a {
+    color: lightgray;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    border-bottom: 1px solid #444;
+    font-family: 'Oswald-Medium';
+}
+
+.mobile-nav a:hover {
+    background-color: #2c2c2c;
+}
+
+/* Active menu */
+.mobile-nav.active {
+    right: 0;
+}
+
+/* Hamburger animation (X) */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+
+
+@media (max-width: 768px){
+
+    section{
+        margin: auto;
+        width: 100%;
+        height: fit-content;
+        top: 1510px;
+    }
+
+    main{
+        margin: auto;
+        width: 100%;
+        height: fit-content;
+        top: 4400px;
+    }
+
+
+    header .low{
+        display: none;
+    }
+
+    header .top{
+        display: none;
+    }
+
+      header .low,
+    header .top {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+
+}
+
+@media (min-width: 1100px) and (max-width: 1800px){
+
+    .header h1{
+        font-size: 40px;
+    }
+
+    .low ul{
+        gap: 50px;
+        justify-content: space-between;
+    }
+
+    .low a{
+        padding: 20px 70px;
+    }
+
+    section{
+        margin: auto;
+        width: 94%;
+        height: fit-content;
+        top: 900px;
+
+    }
+
+        main{
+        margin: auto;
+        width: 94%;
+        height: fit-content;
+        top: 2300px;
+    }
+
+}
+
+@media (min-width: 861px) and (max-width: 1100px){
+
+
+        .header h1{
+        font-size: 30px;
+    }
+
+    .low ul{
+        gap: 50px;
+        justify-content: space-between;
+    }
+
+    .low a{
+        padding: 20px 70px;
+    }
+
+
+
+    section{
+        margin: auto;
+        width: 94%;
+        height: fit-content;
+        top: 1000px;
+    }
+
+        main{
+        margin: auto;
+        width: 94%;
+        height: fit-content;
+        top: 2400px;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 860px){
+
+
+    section{
+        margin: auto;
+        width: 100%;
+        height: fit-content;
+        top: 1100px;
+    }
+
+    main{
+        margin: auto;
+        width: 100%;
+        height: fit-content;
+        top: 4400px;
+    }
+
+
+    header .low{
+        display: none;
+    }
+
+    header .top{
+        display: none;
+    }
+
+      header .low,
+    header .top {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+}
