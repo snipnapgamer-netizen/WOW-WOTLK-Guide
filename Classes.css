@@ -211,7 +211,7 @@ section div{
 
 
 
-@media (max-width: 860px){
+@media (max-width: 729px){
 
     section{
         margin: auto;
@@ -240,22 +240,293 @@ section div{
 
 }
 
-@media (min-width: 1100px) and (max-width: 1800px){
+@media (min-width: 1572px) and (max-width: 1800px){
+
+
+    .header{
+    padding: 20px 40px;
+    }
+
+    .top h1{
+    font-size: 40px;
+    }
+
+    .wowlogo img{
+    height: 55px;
+    }
+
+    .low ul{
+    gap: 70px;
+    flex-wrap: nowrap;
+    }
+
+    .low a{
+    padding: 17px 110px;
+    border: 3px solid rgb(116, 116, 116);
+    font-size: 20px;
+    }
 
     section{
-        margin: auto;
-        width: 90%;
-        height: fit-content;
-
+    width: 84%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 1100px;
+    bottom: 0;
+    margin: auto;
     }
+
+
 }
 
-@media (min-width: 861px) and (max-width: 1100px){
+@media (min-width: 1402px) and (max-width: 1571px){
+
+
+    .header{
+    padding: 20px 30px;
+    }
+
+    .top h1{
+    font-size: 35px;
+    }
+
+    .wowlogo img{
+    height: 50px;
+    }
+
+    .low ul{
+    gap: 50px;
+    flex-wrap: nowrap;
+    }
+
+    .low a{
+    padding: 17px 100px;
+    border: 3px solid rgb(116, 116, 116);
+    font-size: 20px;
+    }
 
     section{
-        margin: auto;
-        width: 94%;
-        height: fit-content;
-        top: 1800px;
+    width: 98%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 1100px;
+    bottom: 0;
+    margin: auto;
     }
+
+
+}
+
+@media (min-width: 1350px) and (max-width: 1401px){
+
+
+    .header{
+    padding: 14px 30px;
+    }
+
+    .top h1{
+    font-size: 33px;
+    }
+
+    .wowlogo img{
+    height: 50px;
+    }
+
+    .low ul{
+    gap: 50px;
+    flex-wrap: nowrap;
+    }
+
+    .low a{
+    padding: 17px 90px;
+    border: 3px solid rgb(116, 116, 116);
+    font-size: 20px;
+    }
+
+    section{
+    width: 98%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 1100px;
+    bottom: 0;
+    margin: auto;
+    }
+
+
+}
+
+@media (min-width: 1100px) and (max-width: 1349px){
+
+
+    .header{
+    padding: 14px 30px;
+    }
+
+    .top h1{
+    font-size: 33px;
+    }
+
+    .wowlogo img{
+    height: 50px;
+    }
+
+    .low ul{
+    gap: 50px;
+    flex-wrap: nowrap;
+    }
+
+    .low a{
+    padding: 17px 70px;
+    border: 3px solid rgb(116, 116, 116);
+    font-size: 20px;
+    }
+
+    section{
+    width: 98%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 1400px;
+    bottom: 0;
+    margin: auto;
+    }
+
+
+}
+
+
+@media (min-width: 1026px) and (max-width: 1099px){
+
+
+    .header{
+    padding: 14px 30px;
+    }
+
+    .top h1{
+    font-size: 25px;
+    }
+
+    .wowlogo img{
+    height: 40px;
+    }
+
+    .low ul{
+    gap: 30px;
+    flex-wrap: nowrap;
+    }
+
+    .low a{
+    padding: 17px 50px;
+    border: 3px solid rgb(116, 116, 116);
+    font-size: 20px;
+    }
+
+    section{
+    width: 98%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 1360px;
+    bottom: 0;
+    margin: auto;
+    }
+
+
+}
+
+@media (min-width: 861px) and (max-width: 1026px){
+
+
+    .header{
+    padding: 14px 30px;
+    }
+
+    .top h1{
+    font-size: 25px;
+    }
+
+    .wowlogo img{
+    height: 40px;
+    }
+
+    .low ul{
+    gap: 30px;
+    flex-wrap: nowrap;
+    }
+
+    .low a{
+    padding: 17px 50px;
+    border: 3px solid rgb(116, 116, 116);
+    font-size: 20px;
+    }
+
+    section{
+    width: 88%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 1620px;
+    bottom: 0;
+    margin: auto;
+    }
+
+
+}
+
+@media (min-width: 730px) and (max-width: 859px){
+
+        header .low{
+        display: none;
+    }
+
+    header .top{
+        display: none;
+    }
+
+     header .low,
+    header .top {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+
+    .header{
+    padding: 14px 30px;
+    }
+
+    .top h1{
+    font-size: 20px;
+    }
+
+    .wowlogo img{
+    height: 32px;
+    }
+
+    .low ul{
+    gap: 20px;
+    flex-wrap: nowrap;
+    }
+
+    .low a{
+    padding: 17px 30px;
+    border: 3px solid rgb(116, 116, 116);
+    font-size: 20px;
+    }
+
+    section{
+    width: 94%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 1460px;
+    bottom: 0;
+    margin: auto;
+    }
+
+
 }

@@ -82,7 +82,7 @@ header{
 
 section{
     width: 86%;
-    height: 700px;
+    height: fit-content;
     background-color: #0d1321c9;
     position: absolute;
     left: 0;
@@ -170,7 +170,7 @@ section div{
 
 main{
     width: 86%;
-    height: 700px;
+    height: fit-content;
     background-color: #210d10c9;
     position: absolute;
     left: 0;
@@ -329,105 +329,250 @@ main div{
 
 }
 
-@media (min-width: 1100px) and (max-width: 1800px){
 
-    .header h1{
-        font-size: 40px;
+@media (min-width: 1536px) and (max-width: 1800px){
+
+
+    .header{
+    padding: 20px 40px;
+    }
+
+    .top h1{
+    font-size: 40px;
+    }
+
+    .wowlogo img{
+    height: 55px;
     }
 
     .low ul{
-        gap: 50px;
-        justify-content: space-between;
+    gap: 70px;
+    flex-wrap: nowrap;
     }
 
     .low a{
-        padding: 20px 70px;
+    padding: 17px 110px;
+    border: 3px solid rgb(116, 116, 116);
+    font-size: 20px;
     }
 
     section{
-        margin: auto;
-        width: 94%;
-        height: fit-content;
-        top: 900px;
-
-    }
-
-        main{
-        margin: auto;
-        width: 94%;
-        height: fit-content;
-        top: 2300px;
-    }
-
-}
-
-@media (min-width: 861px) and (max-width: 1100px){
-
-
-        .header h1{
-        font-size: 30px;
-    }
-
-    .low ul{
-        gap: 50px;
-        justify-content: space-between;
-    }
-
-    .low a{
-        padding: 20px 70px;
-    }
-
-
-
-    section{
-        margin: auto;
-        width: 94%;
-        height: fit-content;
-        top: 1000px;
-    }
-
-        main{
-        margin: auto;
-        width: 94%;
-        height: fit-content;
-        top: 2400px;
-    }
-
-}
-
-@media (min-width: 769px) and (max-width: 860px){
-
-
-    section{
-        margin: auto;
-        width: 100%;
-        height: fit-content;
-        top: 1100px;
+    width: 84%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 900px;
+    bottom: 0;
+    margin: auto;
     }
 
     main{
-        margin: auto;
-        width: 100%;
-        height: fit-content;
-        top: 4400px;
+    width: 84%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 2250px;
+    bottom: 0;
+    margin: auto;
+    }
+
+}
+
+@media (min-width: 1167px) and (max-width: 1535px){
+
+
+    .header{
+    padding: 20px 30px;
+    }
+
+    .top h1{
+    font-size: 35px;
+    }
+
+    .wowlogo img{
+    height: 50px;
+    }
+
+    .low ul{
+    gap: 50px;
+    flex-wrap: nowrap;
+    }
+
+    .low a{
+    padding: 17px 80px;
+    border: 3px solid rgb(116, 116, 116);
+    font-size: 20px;
+    }
+
+    section{
+    width: 88%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 900px;
+    bottom: 0;
+    margin: auto;
+    }
+
+    main{
+    width: 88%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 2250px;
+    bottom: 0;
+    margin: auto;
     }
 
 
-    header .low{
-        display: none;
+
+}
+
+@media (min-width: 1026px) and (max-width: 1166px){
+
+
+    .header{
+    padding: 14px 30px;
     }
 
-    header .top{
-        display: none;
+    .top h1{
+    font-size: 25px;
     }
 
-      header .low,
-    header .top {
-        display: none;
+    .wowlogo img{
+    height: 50px;
     }
 
-    .hamburger {
-        display: block;
+    .low ul{
+    gap: 50px;
+    flex-wrap: nowrap;
+    }
+
+    .low a{
+    padding: 17px 50px;
+    border: 3px solid rgb(116, 116, 116);
+    font-size: 20px;
+    }
+
+    section{
+    width: 98%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 900px;
+    bottom: 0;
+    margin: auto;
+    }
+
+    main{
+    width: 98%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 2250px;
+    bottom: 0;
+    margin: auto;
+    }
+
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1025px){
+
+
+    .header{
+    padding: 14px 30px;
+    }
+
+    .top h1{
+    font-size: 25px;
+    }
+
+    .wowlogo img{
+    height: 50px;
+    }
+
+    .low ul{
+    gap: 35px;
+    flex-wrap: nowrap;
+    }
+
+    .low a{
+    padding: 17px 40px;
+    border: 3px solid rgb(116, 116, 116);
+    font-size: 20px;
+    }
+
+    section{
+    width: 98%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 1160px;
+    bottom: 0;
+    margin: auto;
+    }
+
+    main{
+    width: 98%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 3000px;
+    bottom: 0;
+    margin: auto;
+    }
+
+
+
+}
+
+
+@media (min-width: 687px) and (max-width: 768px){
+
+
+    .header{
+    padding: 14px 30px;
+    }
+
+    .top h1{
+    font-size: 33px;
+    }
+
+    .wowlogo img{
+    height: 50px;
+    }
+
+    .low ul{
+    gap: 50px;
+    flex-wrap: nowrap;
+    }
+
+    .low a{
+    padding: 17px 70px;
+    border: 3px solid rgb(116, 116, 116);
+    font-size: 20px;
+    }
+
+    section{
+    width: 100%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 970px;
+    bottom: 0;
+    margin: auto;
+    }
+
+    main{
+    width: 100%;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 2800px;
+    bottom: 0;
+    margin: auto;
     }
 
 }

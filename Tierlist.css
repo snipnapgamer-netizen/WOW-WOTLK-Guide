@@ -197,8 +197,6 @@ section p{
 }
 
 
-
-
 /* Hamburger */
 .hamburger {
     display: none;
@@ -220,6 +218,7 @@ section p{
 
 /* Mobile menu */
 .mobile-nav {
+    display: none;
     position: fixed;
     top: 0;
     right: -100%;
@@ -268,7 +267,7 @@ section p{
 
 @media (max-width: 850px){
 
-    nav {
+    .bar{
         display: none;
     }
 
@@ -277,6 +276,7 @@ section p{
        display: flex;
        justify-content: center;
        left: 2%;
+       top: 80px;
     }
 
     section img{
@@ -311,9 +311,83 @@ section p{
 
 }
 
-@media (min-width: 851px) and (max-width: 1400px){
+@media (min-width: 851px) and (max-width: 900px){
 
-    nav{
+
+
+    .header{
+    padding: 20px 30px;
+    }
+
+    .top h1{
+    font-size: 25px;
+    }
+
+    .wowlogo img{
+    height: 40px;
+    }
+
+    .low ul{
+    gap: 40px;
+    flex-wrap: nowrap;
+    }
+
+    .low a{
+    padding: 17px 50px;
+    border: 3px solid rgb(116, 116, 116);
+    font-size: 20px;
+    }
+
+
+
+    .bar{
+        left: 10px;
+        width: 30%;
+    }
+
+    section{
+        left: 270px;
+        width: 60%;
+    }
+
+    section img{
+        width: 100%;
+    }
+
+    #prottal img, #furytal img, #armstal img{
+        padding-left: 0%;
+    }
+
+}@media (min-width: 901px) and (max-width: 1399px){
+
+
+
+    .header{
+    padding: 20px 40px;
+    }
+
+    .top h1{
+    font-size: 25px;
+    }
+
+    .wowlogo img{
+    height: 40px;
+    }
+
+    .low ul{
+    gap: 40px;
+    flex-wrap: nowrap;
+    }
+
+    .low a{
+    padding: 17px 50px;
+    border: 3px solid rgb(116, 116, 116);
+    font-size: 20px;
+    }
+
+
+
+    .bar{
         left: 10px;
         width: 30%;
     }
@@ -333,9 +407,37 @@ section p{
 
 }
 
+
 @media (min-width: 1400px) and (max-width: 1800px){
 
-    nav{
+
+
+    .header{
+    padding: 20px 40px;
+    }
+
+    .top h1{
+    font-size: 40px;
+    }
+
+    .wowlogo img{
+    height: 55px;
+    }
+
+    .low ul{
+    gap: 70px;
+    flex-wrap: nowrap;
+    }
+
+    .low a{
+    padding: 17px 100px;
+    border: 3px solid rgb(116, 116, 116);
+    font-size: 20px;
+    }
+
+
+
+    .bar{
         left: 10px;
         width: 30%;
     }
