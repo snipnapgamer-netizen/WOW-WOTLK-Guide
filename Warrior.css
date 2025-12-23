@@ -209,3 +209,25 @@ section p{
     }
 
 }
+
+@media (min-width: 1401px) and (max-width: 1800px){
+
+    nav{
+        left: 10px;
+        width: 30%;
+    }
+
+    section{
+        left: 600px;
+        width: 60%;
+    }
+
+    section img{
+        width: 100%;
+    }
+
+    #prottal img, #furytal img, #armstal img{
+        padding-left: 0%;
+    }
+
+}
