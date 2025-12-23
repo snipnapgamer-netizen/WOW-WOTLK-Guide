@@ -36,7 +36,7 @@ header{
 
 .human h1{
     font-size: 50px;
-    font-family: "Cinzel", serif;
+    font-family: 'Cinzel-Medium';
 }
 
 .human a{
@@ -47,7 +47,7 @@ header{
     padding: 20px 20px;
     flex-wrap: nowrap;
     font-size: 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald-Medium';
 }
 
 .human a:hover{

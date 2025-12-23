@@ -40,7 +40,7 @@ header{
 
 .Warrior h1{
     font-size: 50px;
-    font-family: "Cinzel", serif;
+    font-family: 'Cinzel-Medium';
 }
 
 .Warrior a{
@@ -51,7 +51,7 @@ header{
     padding: 20px 20px;
     flex-wrap: nowrap;
     font-size: 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald-Medium';
 }
 
 .Warrior a:hover{
@@ -88,7 +88,7 @@ nav{
     padding: 15px 5px;
     flex-wrap: nowrap;
     font-size: 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald-Medium';
     gap: 20px 0px;
 }
 
@@ -132,12 +132,12 @@ section{
 
 section h1{
     color: rgb(199, 169, 0);
-    font-family: "Cinzel", serif;
+    font-family: 'Cinzel-Medium';
 }
 
 section p{
     color: rgb(153, 153, 153);
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald-Medium';
     font-size: 20px;
 }
 
